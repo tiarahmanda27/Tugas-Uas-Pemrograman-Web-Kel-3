@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #8B2613;
+    --secondary-color: #FF9F1C;
+    --bg-light: #FFF9F4;
+    --dark-text: #1A1A1A;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar .navbar-brand {
+    color: #FFB52E !important;
+}
+
+.custom-navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+.custom-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255, 159, 28, 0.45);
+}
+
+/* Hero */
+.hero-section {
+    background-color: #FFF3E0;
+    padding: 60px 0;
+    min-height: 420px;
+}
+
+.hero-section h1,
+.hero-section p {
+    color: var(--dark-text) !important;
+}
+
+.text-dark-50 {
+    color: #444 !important;
+}
+
+.btn-custom-cta {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--dark-text);
+    transition: all 0.3s ease;
+}
+
+.btn-custom-cta:hover {
+    background-color: #e68a00;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+.section-tentang,
+.section-testimoni,
+.section-kontak {
+    background-color: #fff;
+}
+
+.section-produk {
+    background-color: var(--bg-light);
+}
+
+.section-keunggulan {
+    background-color: #FFE0B2;
+}
+
+.badge-pengalaman {
+    bottom: -20px;
+    right: 20px;
+}
+
+/* Product cards */
+.product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.product-img {
+    display: block;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.06);
+}
+
+.btn-pesan {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-pesan:hover {
+    background-color: #e68a00;
+}
+
+/* Advantages & testimonials */
+.card-keunggulan {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+}
+
+.card-testimoni {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--secondary-color) !important;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+}
+
+/* Contact */
+.section-kontak {
+    padding: 60px 0;
+}
+
+.icon-kontak {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General */
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 48px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.35rem;
+    }
+
+    .product-img {
+        height: 210px;
+    }
+
+    .badge-pengalaman {
+        right: 10px;
+        bottom: -15px;
+    }
+}
